@@ -13,21 +13,28 @@
       <div class="container">
         <!-- HEADER SECTION 01 START -->
         <div id="desktop-login-section" class="flex justify-between bg-pink-400">
-          <div id="top-massage">
-            <h1> আপনাকে স্বাগতম 😀 সকল বেবি পন্যে ৫% ডিসকাউন্ট !</h1>
+          <div id="top-massage" class="flex justify-center flex-grow">
+            <p class="py-3 text-center font-bold"> আপনাকে স্বাগতম 😀 সকল বেবি পন্যে ৫% ডিসকাউন্ট !</p>
           </div>
-          <div id="top-login">
-            <a href="#">Login</a> | <a href="#">Register</a>
+          <div id="top-login" class="hidden">
+            <a class="" href="#">Login</a> | <a href="#">Register</a>
           </div>
         </div> <!-- HEADER SECTION 01 END -->
 
         <!-- HEADER SECTION 02 START -->
         <div id="top-logo-section" class="flex justify-between">
           <!-- LOGO -->
-        <div id="logo">BabyShop</div>
+        <div id="logo">
+          <a href="/" class="font-bold bg-amber-300 block p-1 rounded">
+            <span class="text-pink-600">Baby</span><span class="text-green-800">Shop</span>
+          </a>
+        </div>
         <!-- SEARCH BAR -->
-        <div id="search" class="">
-          <input type="text" class="border outline-0 px-2" placeholder="Search product .........">
+        <div id="search" class="relative w-full">
+          <input type="text" placeholder="Search For Product ........." class="w-full pl-10 pr-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors">
+          <svg class="w-5 h-5 absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>
         </div>
         <!-- CART OPTIONS -->
          <div id="cart-options">
@@ -37,7 +44,7 @@
 
          <!-- HEADER SECTION 03 START -->
         <div id="top-navigation-section" class="flex space-x-10">
-          <div id="toggle-sidebar" class="relative group px-8 w-80">
+          <div id="toggle-sidebar" class="relative group px-8 w-80 hidden md:block">
             <a href="#" class="block">All Catagoris</a>
             <ul class="absolute hidden group-hover:block ">
               <li><a href="#" class="block p-2 border-b-1 border-gray-400 bg-amber-300 hover:bg-amber-400">Baby Skin Care</a></li>
